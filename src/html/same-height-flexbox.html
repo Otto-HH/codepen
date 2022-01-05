@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="css/same-height-flexbox.css" />
+
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Simple Flexbox Cards with equal height (Javascript)</h1>
+    <p>Simple CSS Layout with flexbox for cards + equal height for each card via Javascript. Equalizes the height of the cards also on resize of the window.<br>Cards width: 100% -> 50% (576px) -> 33% (768px)</p>
+</div>
+
+<div class="container">
+    <div class="wrapper" data-equal-cards-wrapper>
+        <div class="card">
+            <div class="card__header">
+                <strong>Headline</strong>
+            </div>
+            <div class="card__body">
+                <img src="https://fakeimg.pl/350x200/?text=Content">
+            </div>
+            <div class="card__footer">
+                <strong>Footer</strong>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <strong>A longer headline with more content that might cause the header to go over 2 lines</strong>
+            </div>
+            <div class="card__body">
+                <img src="https://fakeimg.pl/300x200/?text=Content">
+            </div>
+            <div class="card__footer">
+                <strong>Footer</strong>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <strong>Headline</strong>
+            </div>
+            <div class="card__body">
+                <img src="https://fakeimg.pl/300x150/?text=Content">
+            </div>
+            <div class="card__footer">
+                <strong>A longer Footer with more content that is aligned to the bottom of the card</strong>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <strong>Headline</strong>
+            </div>
+            <div class="card__body">
+                <img src="https://fakeimg.pl/150x150/?text=Content">
+            </div>
+            <div class="card__footer">
+                <strong>Footer</strong>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <strong>Headline with some more text that might cause the header to expand over two lines</strong>
+            </div>
+            <div class="card__body">
+                <img src="https://fakeimg.pl/150x150/?text=Content">
+            </div>
+            <div class="card__footer">
+                <strong>Footer with a longer text</strong>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <strong>Headline with some more text that might cause the header to expand over two lines</strong>
+            </div>
+            <div class="card__body">
+                <img src="https://fakeimg.pl/150x100/?text=Content">
+            </div>
+            <div class="card__footer">
+                <strong>Footer with a longer text that might cause a second line for the footer</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/same-height-flexbox.js"></script>
+</body>
+</html>

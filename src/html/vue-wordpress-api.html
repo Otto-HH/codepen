@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vue-wordpress-api.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+</head>
+<body>
+
+
+<div id="app">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mb-5 mt-5">Simple Vue + Wordpress API Example</h1>
+                <p>Using Axios & show some data, change url for example or add keys of response data to show additional data. Auto update of this pen disabled.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div v-for="post in posts" class="col-sm-6 col-md-4 card">
+                <div class="post card-body">
+                    <img class="img-fluid mb-2" :src="getPostImage(post)">
+                    <h4>{{post.title.rendered}}</h4>
+                    <div v-html="post.excerpt.rendered"></div>
+                    <a href="{{post.link}}" role="button" class="btn btn-primary">Read article</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/vue-wordpress-api.js"></script>
+</body>
+</html>
